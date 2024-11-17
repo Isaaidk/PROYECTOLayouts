@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROYECTO1.NewPage1"
+             Padding="0,20,0,0"
+             Title="NewPage1">
+
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <!-- Cuadrado 1 -->
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" />
+        <!-- Cuadrado 2 -->
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" />
+        <!-- Cuadrado 3 -->
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" />
+        <!-- Cuadrado 4 -->
+        <BoxView Grid.Row="1" Grid.Column="1" Color="Yellow" 
+                  
+                 />
+        <Grid Grid.Row="1" Grid.Column="1">
+            <BoxView Color="Yellow" />
+            <Button Text="StackLayout" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="OnCounterClicked"
+ />
+        </Grid>
+
+
+    </Grid>
+    
+</ContentPage>
