@@ -3,10 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PROYECTO1.NewPage2"
              Title="NewPage2">
-    <StackLayout VerticalOptions="FillAndExpand">
-        <!-- Otros elementos aquí si los necesitas -->
+    <FlexLayout Direction="Column" 
+                Wrap="Wrap" 
+                JustifyContent="SpaceAround" 
+                AlignItems="Center" 
+                Padding="10">
 
-        <!-- BoxView al final del StackLayout -->
-        <BoxView Color="Red" HeightRequest="10" VerticalOptions="End" />
-    </StackLayout>
+        <!-- Elemento 1: Rojo -->
+        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+            <BoxView Color="Red" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Rojo" FontSize="20" VerticalOptions="Center" />
+        </StackLayout>
+
+        <!-- Elemento 2: Azul -->
+        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+            <BoxView Color="Blue" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Azul" FontSize="20" VerticalOptions="Center" />
+        </StackLayout>
+
+        <!-- Elemento 3: Verde -->
+        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+            <BoxView Color="Green" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Verde" FontSize="20" VerticalOptions="Center" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Button Text="StackLayout" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Clicked="OnCounterClicked"
+/>
+        </StackLayout>
+
+
+
+
+    </FlexLayout>
 </ContentPage>
