@@ -9,33 +9,35 @@
                 AlignItems="Center" 
                 Padding="10">
 
-        <!-- Elemento 1: Rojo -->
         <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
             <BoxView Color="Red" WidthRequest="50" HeightRequest="50" />
             <Label Text="Rojo" FontSize="20" VerticalOptions="Center" />
         </StackLayout>
 
-        <!-- Elemento 2: Azul -->
         <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
             <BoxView Color="Blue" WidthRequest="50" HeightRequest="50" />
             <Label Text="Azul" FontSize="20" VerticalOptions="Center" />
         </StackLayout>
 
-        <!-- Elemento 3: Verde -->
+ 
         <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
             <BoxView Color="Green" WidthRequest="50" HeightRequest="50" />
             <Label Text="Verde" FontSize="20" VerticalOptions="Center" />
         </StackLayout>
+
         <StackLayout Orientation="Vertical" VerticalOptions="Center">
             <Button Text="StackLayout" 
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   Clicked="OnCounterClicked"
-/>
+                   Clicked="OnCounterClicked"/>
         </StackLayout>
 
-
-
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Button Text="Regreso" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="OnNewButtonClicked" />
+        </StackLayout>
 
     </FlexLayout>
 </ContentPage>
