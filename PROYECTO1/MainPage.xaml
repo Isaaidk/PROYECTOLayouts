@@ -7,26 +7,31 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                Source="C:\Users\LENOVO\source\repos\PROYECTO1\PROYECTO1\Resources\Ima\Mesa-de-trabajo-5.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
                 Text="Proyecto Uso de Layouts"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            
+            <Image
+                Source="C:\Users\LENOVO\source\repos\PROYECTO1\PROYECTO1\Resources\Ima\Mesa-de-trabajo-5.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
 
             <Label
-                Text="Andres Jimenez ,Pablo Criollo ,Isaac Puga "
+                Text="Pablo Criollo - Isaac Puga "
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                 />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Iniciar" 
+                BorderColor="White"
+                BorderWidth="3"
+                BackgroundColor="Red"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />

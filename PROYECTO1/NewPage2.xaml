@@ -3,41 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PROYECTO1.NewPage2"
              Title="NewPage2">
-    <FlexLayout Direction="Column" 
-                Wrap="Wrap" 
-                JustifyContent="SpaceAround" 
-                AlignItems="Center" 
-                Padding="10">
 
-        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
-            <BoxView Color="Red" WidthRequest="50" HeightRequest="50" />
-            <Label Text="Rojo" FontSize="20" VerticalOptions="Center" />
-        </StackLayout>
+    <StackLayout Margin="20"
+                 Spacing="7"
+                 BackgroundColor="Black"
+                 >
+        
+        
+        
+        <Label Text="Colores Primarios" />
+        <BoxView Color="Red"
 
-        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
-            <BoxView Color="Blue" WidthRequest="50" HeightRequest="50" />
-            <Label Text="Azul" FontSize="20" VerticalOptions="Center" />
-        </StackLayout>
+                 HeightRequest="42"
+         />
+        
+        <!--BoxViw Nos da un elemento en una caja
+        Color Nos da el color 
+        Height Request nos da el tamaño del box de vertical
+        El stak organiza las cosas ya sea vertical o horizontalmente, spacing es para el espacio entre 
+        los contenedores y margin es el margen con la pantalla 
+        --> 
+        
+        <BoxView Color="Yellow"
+                 HeightRequest="40" />
+        <BoxView Color="Blue"
+                 HeightRequest="40" />
+        <Label Text="Colores Secundarios" />
+        
+        <BoxView Color="Green"
+                 HeightRequest="40" />
+        <BoxView Color="Orange"
+                 HeightRequest="40" />
+        <BoxView Color="Purple"
+                 HeightRequest="40" />
 
- 
-        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
-            <BoxView Color="Green" WidthRequest="50" HeightRequest="50" />
-            <Label Text="Verde" FontSize="20" VerticalOptions="Center" />
-        </StackLayout>
 
-        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="700" >
             <Button Text="StackLayout" 
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Clicked="OnCounterClicked"/>
+                    TextColor="White"
+                   HorizontalOptions="EndAndExpand"
+                   Clicked="OnCounterClicked"
+                   BorderColor="White"
+                   BorderWidth="2"
+                   BackgroundColor="Red"
+                    />
+
+            <Button Text="Regreso" TextColor="White" 
+        HorizontalOptions="StartAndExpand"
+        Clicked="OnNewButtonClicked"
+                    
+                BorderColor="White"
+                BorderWidth="2"
+                BackgroundColor="Red"/>
         </StackLayout>
 
-        <StackLayout Orientation="Vertical" VerticalOptions="Center">
-            <Button Text="Regreso" 
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Clicked="OnNewButtonClicked" />
-        </StackLayout>
+      
+    </StackLayout>
 
-    </FlexLayout>
+
 </ContentPage>

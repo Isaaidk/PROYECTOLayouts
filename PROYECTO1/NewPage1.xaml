@@ -4,15 +4,14 @@
              Padding="0,20,0,0"
              Title="NewPage1">
 
-    <Grid RowDefinitions="Auto,*,*" ColumnDefinitions="*,*">
+    <Grid RowDefinitions="Auto,*,*,*" ColumnDefinitions="*,*">
         <!-- Título en la parte superior -->
-        <Label Text="GridLayout"
+        <Label Text="GRIDLAYOUT"
                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
                FontSize="24"
-               BackgroundColor="LightGray"
-               TextColor="Black" />
+               TextColor="White" />
 
         <!-- Cuadrado 1 -->
         <BoxView Grid.Row="1" Grid.Column="0" Color="Red" />
@@ -22,9 +21,11 @@
         <BoxView Grid.Row="2" Grid.Column="0" Color="Green" />
         <!-- Cuadrado 4 -->
         <BoxView Grid.Row="2" Grid.Column="1" Color="Yellow" />
-
-        <Grid Grid.Row="2" Grid.Column="1">
-            <BoxView Color="Yellow" />
+        <!-- Cuadrado 4 -->
+        <BoxView Grid.Row="3" Grid.Column="1" Color="WhiteSmoke" />
+       
+        <Grid Grid.Row="3" Grid.Column="1">
+            <BoxView Color="PapayaWhip" />
             <Button Text="StackLayout" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
@@ -32,12 +33,12 @@
         </Grid>
 
         <!-- Botón de regreso -->
-        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+        <Grid Grid.Row="3" Grid.Column="0">
             <Button Text="Regreso" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     Clicked="OnBackButtonClicked" />
-        </StackLayout>
+        </Grid>
 
     </Grid>
 
