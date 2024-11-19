@@ -38,6 +38,25 @@
                FontSize="18"
                BackgroundColor="Pink"
                HorizontalTextAlignment="Center" />
+
+
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Button Text="StackLayout" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Clicked="OnCounterClicked"/>
+        </StackLayout>
+
+
+        <!-- Botón de regreso -->
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Button Text="Regreso" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="OnBackButtonClicked" />
+        </StackLayout>
+        
+
     </FlexLayout>
 
 

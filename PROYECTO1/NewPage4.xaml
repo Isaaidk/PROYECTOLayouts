@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROYECTO1.NewPage4"
+             Title="NewPage4">
+
+    <AbsoluteLayout Margin="20">
+
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.2, 100, 100"
+                 Rotation="30" />
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
+                 Rotation="60" />
+
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.8, 100, 100" />
+
+        <Button Text="Ir a GridLayout"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Clicked="OnNavigateToGridLayout" />
+
+     
+        <Button Text="Regreso" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0, 1, 150, 50"
+                HorizontalOptions="Start"
+                VerticalOptions="End"
+                Clicked="OnBackButtonClicked" />
+
+    </AbsoluteLayout>
+
+</ContentPage>
