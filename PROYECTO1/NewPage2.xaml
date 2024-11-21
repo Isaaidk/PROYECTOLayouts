@@ -11,7 +11,7 @@
         
         
         
-        <Label Text="Colores Primarios" />
+        <Label Text="Colores " />
         <BoxView Color="Red"
 
                  HeightRequest="42"
@@ -28,25 +28,17 @@
                  HeightRequest="40" />
         <BoxView Color="Blue"
                  HeightRequest="40" />
-        <Label Text="Colores Secundarios" />
-        
-        <BoxView Color="Green"
-                 HeightRequest="40" />
-        <BoxView Color="Orange"
-                 HeightRequest="40" />
-        <BoxView Color="Purple"
-                 HeightRequest="40" />
+        <Label Text="Nombres" />
+
+        <Label Text="Isaac Puga" FontSize="Title" BackgroundColor="HotPink" TextColor="Black" CharacterSpacing="22"/>
+
+        <Label Text="Pablo Criolo " FontSize="Large" TextColor="Blue" BackgroundColor="Azure"/>
+
+        <Label Text="Mateo  " FontSize="Header" TextColor="GreenYellow" BackgroundColor="Purple" TextDecorations="Underline"/>
+
 
 
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="700" >
-            <Button Text="StackLayout" 
-                    TextColor="White"
-                   HorizontalOptions="EndAndExpand"
-                   Clicked="OnCounterClicked"
-                   BorderColor="White"
-                   BorderWidth="2"
-                   BackgroundColor="Red"
-                    />
 
             <Button Text="Regreso" TextColor="White" 
         HorizontalOptions="StartAndExpand"
@@ -55,6 +47,19 @@
                 BorderColor="White"
                 BorderWidth="2"
                 BackgroundColor="Red"/>
+
+
+            <Button Text="FlexLayout" 
+                    TextColor="White"
+                   HorizontalOptions="EndAndExpand"
+                   Clicked="OnCounterClicked"
+                   BorderColor="White"
+                   BorderWidth="2"
+                   BackgroundColor="Red"
+                    
+                    />
+
+
         </StackLayout>
 
       

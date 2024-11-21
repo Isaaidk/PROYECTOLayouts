@@ -29,7 +29,13 @@
             <Button Text="StackLayout" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Clicked="OnCounterClicked" />
+                    Clicked="OnCounterClicked" 
+                    
+                     BorderColor="White"
+ TextColor="White"
+ BorderWidth="2"
+ BackgroundColor="Red"
+                    />
         </Grid>
 
         <!-- Botón de regreso -->
@@ -37,7 +43,13 @@
             <Button Text="Regreso" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Clicked="OnBackButtonClicked" />
+                    Clicked="OnBackButtonClicked" 
+                     BorderColor="White"
+ TextColor="White"
+ BorderWidth="2"
+ BackgroundColor="Red"
+                    
+                    />
         </Grid>
 
     </Grid>

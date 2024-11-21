@@ -3,85 +3,76 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PROYECTO1.NewPage3"
              Title="NewPage3">
-    <FlexLayout Direction="Column">
-
-        <Label Text="Cabeza"
-               FontSize="20"
-               BackgroundColor="Purple"
-               HorizontalTextAlignment="Center" 
-               
-               Margin="3"
-
-               />
-
-        <FlexLayout FlexLayout.Grow="1">
-
-            <!-- Content -->
-            <Label Text="Contenido"
-                   FontSize="14"
-                   BackgroundColor="Tomato"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FlexLayout.Grow="5"
-                    Margin="3"
-
-                   />
-
-            <!-- Navigation items-->
-            <BoxView FlexLayout.Basis="50"
-                     FlexLayout.Order="-1"
-                     Color="Chocolate"
-                                    Margin="3"
-/>
-
-            <!-- Aside items -->
-            <BoxView FlexLayout.Basis="50"
-                     Color="ForestGreen" 
-                     Margin="3"
-
-                     />
-
-        </FlexLayout>
-
-        <!-- Footer -->
-        <Label Text="Patas"
-
-               FontSize="18"
-
-               Margin="3"
-               BackgroundColor="LightPink"
-               HorizontalTextAlignment="Center" />
 
 
-        <!-- Botón de regreso y pagina siguiente  -->
-        <StackLayout Orientation="Horizontal" Spacing="700">
 
-            <Button Text="Regreso"
-                    TextColor="White"
-                  HorizontalOptions="Center"
-                  VerticalOptions="Center"
-                  Clicked="OnBackButtonClicked" 
-                     BorderColor="White"
-                       BorderWidth="2"
-                      BackgroundColor="Red"/>
-            <Button Text="Absolute Layout" 
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Clicked="OnCounterClicked"
-                    BorderColor="White"
-                    TextColor="White"
-                    BorderWidth="2"
-                    BackgroundColor="Red"
-                    />
-           
-        </StackLayout>
+    <FlexLayout Direction="Column" Wrap="Wrap" AlignItems="Start">
+
+        <ImageButton  Source="C:\Users\LENOVO\source\repos\PROYECTO1\PROYECTO1\Resources\Ima\Gato1.png" WidthRequest="150 " HeightRequest="125" Margin="5" Clicked="OnCounterClicked">
 
 
-        
-      
-        
+
+        </ImageButton>
+
+        <ImageButton  Source="C:\Users\LENOVO\source\repos\PROYECTO1\PROYECTO1\Resources\Ima\88149b0400750578f4d07d9bc3fb0fee.gif " WidthRequest="150 " HeightRequest="125" Margin="5" Clicked="OnCounterClicked">
+
+
+        </ImageButton>
+
+        <ImageButton  Source="C:\Users\LENOVO\source\repos\PROYECTO1\PROYECTO1\Resources\Ima\Mono1.png" WidthRequest="150 " HeightRequest="125" Margin="5" Clicked="OnBackButtonClicked" >
+
+
+        </ImageButton>
+
+        <Label Text="Isaac Puga" FontSize="Title" BackgroundColor="HotPink" TextColor="Black" CharacterSpacing="22"  TranslationY="50">
+            
+            
+        </Label>
+        <Label Text="Isaac Pablo" FontSize="Title" BackgroundColor="GreenYellow" TextColor="Black" CharacterSpacing="22" TranslationY="160">
+
+
+        </Label>
+        <Label Text="Pablo" FontSize="Title" BackgroundColor="Beige" TextColor="Black" CharacterSpacing="22"    TranslationY="280">
+
+
+        </Label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
 
     </FlexLayout>
+
+  
+
+
+
+
+
+
+
+
+
 
 
 
